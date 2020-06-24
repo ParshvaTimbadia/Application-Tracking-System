@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Application</title>
+  
+  <link href="style.css" rel="stylesheet">
+  <script defer src="script.js"></script>
+</head>
+<body>
+   
+  <button data-modal-target="#modal">+ Add Request</button>
+  
+  <div id='requirement_table'>
+   
+    <table style="width:100%">
+        <tr>
+          <th>Manager's Firstname</th>
+          <th>Manager's Lastname</th>
+          <th>Team name</th>
+          <th>Required </th>
+          <th>Duration<th>
+        </tr>
+
+  </div>
+  
+  
+  
+  
+  <div class="modal" id="modal">
+    
+    <div class="modal-header">
+      <div class="title">Add Details</div>
+      <button data-close-button class="close-button">&times;</button>
+    </div>
+
+    <div class="modal-body">
+        <div class='input'>Manager's First name:<input id='Mfname' type="text"></div>
+        <div class='input'>Manager's Last name:<input id='Mfname' type="text"></div>
+        <div class='input'>Team name:<input id='Mfname' type="text"></div>
+        <div class='input'>Required:<input id='Mfname' type="text"></div>
+        <div class='input'>Duration:<input id='Mfname' type="text"></div>
+        <button id='submit' onclick=" displayDetails()"> Sumbit </button>
+       
+    </div>
+
+  </div>
+
+  <div id="overlay"></div>
+
+  <script  src="table.js"></script>
+</body>
+</html>
